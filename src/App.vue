@@ -12,11 +12,32 @@ export default {
 </script>
 
 <template>
-    <AppMain />
-    <AppBottom />
+
+    <div id="wrapper">
+
+        <section id="main">
+            <AppMain />
+        </section>
+
+        <section id="bottom">
+            <AppBottom />
+        </section>
+
+    </div>
+
 </template>
 
 <style lang="scss">
 @use "./styles/partials/variables" as*;
 @use "./styles/general.scss" as*;
+
+#wrapper {
+    height: 100vh;
+
+    #main {
+        display: flex;
+        overflow: hidden;
+        height: calc(100% - 80px);
+    }
+}
 </style>
