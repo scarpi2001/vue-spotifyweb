@@ -1,62 +1,51 @@
 <script>
+import SideLogo from './side_components/SideLogo.vue'
+import SideNav from './side_components/SideNav.vue'
+import SidePlayList from './side_components/SidePlayList.vue'
+import SideDownload from './side_components/SideDownload.vue'
+
 export default {
     name: "MainSide",
     components: {
-
+        SideLogo,
+        SideNav,
+        SidePlayList,
+        SideDownload,
     }
 }
 </script>
 
 <template>
+
     <!-- side-bar logo -->
-    <figure id="main_side_bar_logo">
-        <img class="logo" src="img/logo.svg" alt="Logo">
-        <img class="mini-logo" src="img/logo-small.svg" alt="Logo">
-    </figure>
+    <SideLogo />
 
     <!-- side-bar nav -->
-    <nav id="side_bar_nav">
-        <ul>
-            <li>
-                <a class="link white-text" href="#">
-                    <img src="img/home.svg" alt="home">
-                    <span>
-                        Home
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <SideNav />
 
     <!-- side-bar playlist -->
-    <div id="side_bar_playlist">
-        <h3 class="white-text">PLAYLIST</h3>
-        <div id="add">
-            <span id="add_btn"><i class="fa-solid fa-plus"></i></span>
-            <span class="create grey-text">
-                <h3>Crea Playlist</h3>
-            </span>
-        </div>
-    </div>
-
-    <!-- lista playlist -->
-    <div id="playlist_list">
-        <ul>
-            <li><a class="link grey-text" href="#">Nome Playlist</a></li>
-        </ul>
-    </div>
+    <SidePlayList />
 
     <!-- side-bar download -->
-    <div id="side_bar_download">
-        <figure id="download">
-            <img src="img/download.svg" alt="scarica">
-            <a class="link grey-text" href="#">Installa app</a>
-        </figure>
-    </div>
+    <SideDownload />
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "../../styles/partials/variables" as*;
 @use "../../styles/general.scss" as*;
+
+.link {
+    color: rgb(127, 129, 134);
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 </style>

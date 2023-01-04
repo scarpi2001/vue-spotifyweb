@@ -30,6 +30,8 @@ export default {
 @use "../styles/general.scss" as*;
 
 #main_side {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     min-width: 200px;
     padding: 0 15px;
