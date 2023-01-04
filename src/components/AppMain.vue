@@ -13,10 +13,12 @@ export default {
 
 <template>
 
+    <!-- sidebar -->
     <section id="main_side">
         <MainSide />
     </section>
 
+    <!-- contenuto principale -->
     <section id="main_content">
         <MainContent />
     </section>
