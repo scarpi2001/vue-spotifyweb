@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+//GENERALI
 * {
     margin: 0;
     padding: 0;
@@ -9,4 +10,8 @@
 body {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+    text-decoration: none;
 }
