@@ -35,17 +35,12 @@ export default {
 @use "../../styles/partials/variables" as*;
 @use "../../styles/general.scss" as*;
 
-.link {
+li {
     color: rgb(127, 129, 134);
 
     &:hover {
         color: #fff;
+        cursor: pointer;
     }
-}
-
-li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
 }
 </style>

@@ -6,19 +6,20 @@ export default {
 
 <template>
 
-    <div id="sidebar_playlist">
-        <div id="add">
-            <span id="add_btn">
-                <font-awesome-icon icon="fa-solid fa-plus" />
-            </span>
-            <h3>Crea Playlist</h3>
-        </div>
+    <h3>PLAYLIST</h3>
+
+    <!-- pulsante add -->
+    <div id="add">
+        <span id="add_btn">
+            <font-awesome-icon icon="fa-solid fa-plus" />
+        </span>
+        <h3>Crea Playlist</h3>
     </div>
 
     <!-- lista playlist -->
     <div id="playlist_list">
         <ul>
-            <li><a class="link" href="#">Nome Playlist</a></li>
+            <li>Nome Playlist</li>
         </ul>
 
     </div>
@@ -29,30 +30,33 @@ export default {
 @use "../../../styles/partials/variables" as*;
 @use "../../../styles/general.scss" as*;
 
-#sidebar_playlist {
+h3 {
+    color: #fff;
+}
+
+#add {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+
     h3 {
         color: rgb(127, 129, 134);
     }
 
-    #add {
-        display: flex;
-        align-items: center;
-        margin: 15px 0;
+    #add_btn {
+        padding: 5px 8px;
+        margin-right: 10px;
+        background-color: rgb(163, 163, 163);
+        font-size: 20px;
 
-        #add_btn {
-            padding: 5px 8px;
-            margin-right: 10px;
-            background-color: rgb(163, 163, 163);
-            font-size: 20px;
-
-            &:hover {
-                background-color: white;
-                cursor: pointer;
-            }
+        &:hover {
+            background-color: white;
+            cursor: pointer;
         }
-
     }
+
 }
+
 
 #playlist_list {
     flex-grow: 1;
