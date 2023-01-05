@@ -1,6 +1,39 @@
 <script>
 export default {
     name: "SidePlayList",
+    data() {
+        return {
+            playlists: [
+                {
+                    name: "Jazz",
+                },
+                {
+                    name: "Pop",
+                },
+                {
+                    name: "Rock",
+                },
+                {
+                    name: "Hip-hop",
+                },
+                {
+                    name: "Metal",
+                },
+                {
+                    name: "Anni 2000",
+                },
+                {
+                    name: "Classica",
+                },
+                {
+                    name: "Serate",
+                },
+                {
+                    name: "Anni 90",
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -19,7 +52,9 @@ export default {
     <!-- lista playlist -->
     <div id="playlist_list">
         <ul>
-            <li>Nome Playlist</li>
+            <li v-for="(playlist, index) in playlists" :key="index">
+                {{ playlist.name }}
+            </li>
         </ul>
 
     </div>
@@ -61,5 +96,9 @@ h3 {
 #playlist_list {
     flex-grow: 1;
     overflow-y: auto;
+
+    li {
+        margin-bottom: 15px;
+    }
 }
 </style>

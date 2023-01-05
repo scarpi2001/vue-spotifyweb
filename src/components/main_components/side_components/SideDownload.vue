@@ -30,6 +30,15 @@ export default {
             width: 30px;
             margin-right: 5px;
         }
+
+        a {
+            color: rgb(127, 129, 134);
+
+            &:hover {
+                color: #fff;
+                cursor: pointer;
+            }
+        }
     }
 }
 </style>

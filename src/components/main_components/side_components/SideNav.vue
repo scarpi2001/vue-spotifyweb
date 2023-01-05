@@ -54,10 +54,12 @@ export default {
             width: 25px;
             margin-right: 5px;
             filter: brightness(50%);
+            transition: all 0.3s;
         }
 
         &:hover img {
             filter: brightness(100%);
+            scale: 1.2;
         }
     }
 
