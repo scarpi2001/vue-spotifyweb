@@ -20,7 +20,7 @@ export default {
 
 #top_bar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;

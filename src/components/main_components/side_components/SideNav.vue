@@ -1,8 +1,11 @@
 <script>
+import { store } from '../../../store';
+
 export default {
     name: "SideNav",
     data() {
         return {
+            store,
             menu: [
                 {
                     img: '../../../src/assets/images/home.svg',
@@ -17,8 +20,13 @@ export default {
                     text: "La tua libreria",
                 },
             ]
-
         }
+    },
+
+    methods: {
+        currentVoice(index) {
+            this.store.active = index;
+        },
     }
 }
 </script>
@@ -27,7 +35,8 @@ export default {
 
     <nav id="sidebar_nav">
         <ul>
-            <li v-for="(menuVoice, index) in menu" :key="index">
+            <li v-for="(menuVoice, index) in menu" :key="index" @click="currentVoice(index)"
+                :class="{ selected: store.active === index }">
                 <img :src="menuVoice.img" :alt="menuVoice.text">
                 <span>
                     {{ menuVoice.text }}
@@ -58,6 +67,15 @@ export default {
         }
 
         &:hover img {
+            filter: brightness(100%);
+            scale: 1.2;
+        }
+    }
+
+    .selected {
+        color: #fff;
+
+        img {
             filter: brightness(100%);
             scale: 1.2;
         }
