@@ -19,3 +19,20 @@ body {
 ul {
     list-style-type: none;
 }
+
+//scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(107, 107, 107);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(196, 196, 196);
+}

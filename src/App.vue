@@ -39,5 +39,14 @@ export default {
         overflow: hidden;
         height: calc(100% - 80px);
     }
+
+    #bottom {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        background-color: rgb(40, 40, 40);
+        color: white;
+        padding: 20px 10px;
+    }
 }
 </style>
