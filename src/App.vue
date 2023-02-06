@@ -17,6 +17,7 @@ export default {
 
         <section id="main">
             <AppMain />
+            
         </section>
 
         <section id="bottom">
