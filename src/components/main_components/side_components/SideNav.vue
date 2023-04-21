@@ -57,7 +57,7 @@ export default {
     li {
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
         img {
             width: 25px;
@@ -81,5 +81,16 @@ export default {
         }
     }
 
+}
+
+// smartphone version
+@media screen and (max-width: 600px) {
+    
+    #sidebar_nav {
+        span {
+            display: none;
+        }
+    }
+    
 }
 </style>

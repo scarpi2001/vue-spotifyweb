@@ -39,8 +39,20 @@ export default {
 
 #main_content {
     flex-grow: 1;
-    padding: 15px;
+    padding: 30px;
+    overflow: hidden;
     overflow-y: auto;
     background-color: rgb(20, 25, 34);
 }
+
+// smartphone version
+@media screen and (max-width: 600px) {
+
+    #main_side {
+        min-width: 60px;
+        max-width: 60px;
+        text-align: center;
+    }
+}
+
 </style>

@@ -6,12 +6,12 @@ export default {
 
 <template>
 
-    <div id="sidebar_download">
+    <!-- <div id="sidebar_download">
         <div id="download">
             <img src="../../../assets/images/download.svg" alt="scarica">
             <a class="link" href="#">Installa app</a>
         </div>
-    </div>
+    </div> -->
 
 </template>
 
@@ -40,5 +40,14 @@ export default {
             }
         }
     }
+}
+
+// smartphone version
+@media screen and (max-width: 600px) {
+    
+    #sidebar_download {
+        display: none;
+    }
+    
 }
 </style>

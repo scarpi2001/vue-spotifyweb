@@ -6,9 +6,9 @@ export default {
 
 <template>
 
-    <figure id="sidebar_logo">
+    <figure class="sidebar_logo">
         <img class="logo" src="../../../assets/images/logo.svg" alt="Logo">
-        <img class="mini-logo" src="../../../assets/images/logo-small.svg" alt="Logo">
+        <img class="mini_logo" src="../../../assets/images/logo-small.svg" alt="Logo">
     </figure>
 
 </template>
@@ -17,15 +17,34 @@ export default {
 @use "../../../styles/partials/variables" as*;
 @use "../../../styles/general.scss" as*;
 
-#sidebar_logo {
+.sidebar_logo {
     padding: 20px 0;
 
     img {
         max-width: 70%;
     }
 
-    .mini-logo {
+    .mini_logo {
         display: none;
     }
+}
+
+// smartphone version
+@media screen and (max-width: 600px) {
+
+    .sidebar_logo {
+
+        img {
+            max-width: 100%;
+        }
+        .logo {
+            display: none;
+        }
+
+        .mini_logo {
+            display: block;
+        }
+    }
+    
 }
 </style>
