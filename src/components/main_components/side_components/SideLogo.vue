@@ -7,8 +7,8 @@ export default {
 <template>
 
     <figure class="sidebar_logo">
-        <img class="logo" src="logo.svg" alt="Logo">
-        <img class="mini_logo" src="logo-small.svg" alt="Logo">
+        <img class="logo" src="/logo.svg" alt="Logo">
+        <img class="mini_logo" src="/logo-small.svg" alt="Logo">
     </figure>
 
 </template>

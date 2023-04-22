@@ -16,8 +16,7 @@ export default {
     <div id="wrapper">
 
         <section id="main">
-            <AppMain />
-            
+            <AppMain />   
         </section>
 
         <!-- <section id="bottom">
