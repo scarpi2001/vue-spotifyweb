@@ -8,15 +8,15 @@ export default {
             store,
             menu: [
                 {
-                    img: '../../../src/assets/images/home.svg',
+                    img: 'home.svg',
                     text: "Home",
                 },
                 {
-                    img: '../../../src/assets/images/search.svg',
+                    img: 'search.svg',
                     text: "Cerca",
                 },
                 {
-                    img: '../../../src/assets/images/libreria.svg',
+                    img: 'libreria.svg',
                     text: "La tua libreria",
                 },
             ]

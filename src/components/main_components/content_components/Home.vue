@@ -22,7 +22,6 @@ export default {
 
             axios.request(options).then((res) => {
                 this.tracks = res.data.tracks;
-                console.log(this.tracks);
             }).catch((err) => {
                 console.error(err);
             });
