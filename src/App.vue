@@ -20,9 +20,9 @@ export default {
             
         </section>
 
-        <section id="bottom">
+        <!-- <section id="bottom">
             <AppBottom />
-        </section>
+        </section> -->
 
     </div>
 
@@ -38,7 +38,7 @@ export default {
     #main {
         display: flex;
         overflow: hidden;
-        height: calc(100% - 80px);
+        height: 100%;
     }
 
     #bottom {
