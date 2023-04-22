@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { faPlus as fasPlus } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass as fasMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import { faHouse as fasHome } from '@fortawesome/free-solid-svg-icons'
+import { faHome as fasHome } from '@fortawesome/free-solid-svg-icons'
 import { faBookmark as fasBookmark } from '@fortawesome/free-solid-svg-icons'
 
 

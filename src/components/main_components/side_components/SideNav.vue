@@ -8,14 +8,17 @@ export default {
             store,
             menu: [
                 {
+                    icon:"['fas', 'house']",
                     img: '/home.svg',
                     text: "Home",
                 },
                 {
+                    icon:"['fas', 'magnifying-glass']",
                     img: '/search.svg',
                     text: "Cerca",
                 },
                 {
+                    icon:"['fas', 'bookmark']",
                     img: '/libreria.svg',
                     text: "La tua libreria",
                 },
@@ -37,7 +40,7 @@ export default {
         <ul>
             <li v-for="(menuVoice, index) in menu" :key="index" @click="currentVoice(index)"
                 :class="{ selected: store.active === index }">
-                <img :src="menuVoice.img" :alt="menuVoice.text">
+                <!-- <img :src="menuVoice.img" :alt="menuVoice.text"> -->
                 <span>
                     {{ menuVoice.text }}
                 </span>
