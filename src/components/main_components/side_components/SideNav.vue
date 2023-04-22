@@ -8,17 +8,17 @@ export default {
             store,
             menu: [
                 {
-                    icon:"['fas', 'house']",
+                    icon:"fa-solid fa-house",
                     img: '/home.svg',
                     text: "Home",
                 },
                 {
-                    icon:"['fas', 'magnifying-glass']",
+                    icon:"fa-solid fa-magnifying-glass",
                     img: '/search.svg',
                     text: "Cerca",
                 },
                 {
-                    icon:"['fas', 'bookmark']",
+                    icon:"fa-solid fa-bookmark",
                     img: '/libreria.svg',
                     text: "La tua libreria",
                 },
@@ -38,9 +38,11 @@ export default {
 
     <nav id="sidebar_nav">
         <ul>
-            <li v-for="(menuVoice, index) in menu" :key="index" @click="currentVoice(index)"
-                :class="{ selected: store.active === index }">
-                <!-- <img :src="menuVoice.img" :alt="menuVoice.text"> -->
+            <li v-for="(menuVoice, index) in menu" :key="index" @click="currentVoice(index)" :class="{ selected: store.active === index }">
+                <div>
+                    <font-awesome-icon :icon="menuVoice.icon" />
+                </div>
+                
                 <span>
                     {{ menuVoice.text }}
                 </span>
@@ -62,14 +64,14 @@ export default {
         align-items: center;
         margin-bottom: 20px;
 
-        img {
-            width: 25px;
-            margin-right: 5px;
+        div {
+            font-size: 18px;
+            margin-right: 10px;
             filter: brightness(50%);
             transition: all 0.3s;
         }
 
-        &:hover img {
+        &:hover div {
             filter: brightness(100%);
             scale: 1.2;
         }
@@ -78,7 +80,7 @@ export default {
     .selected {
         color: #fff;
 
-        img {
+        div {
             filter: brightness(100%);
             scale: 1.2;
         }
@@ -90,6 +92,13 @@ export default {
 @media screen and (max-width: 600px) {
     
     #sidebar_nav {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
         span {
             display: none;
         }

@@ -33,7 +33,8 @@ export default {
 @media screen and (max-width: 600px) {
 
     .sidebar_logo {
-
+        margin-bottom: 30px;
+        
         img {
             max-width: 100%;
         }
